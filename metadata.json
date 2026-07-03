@@ -1,0 +1,6 @@
+{
+  "name": "Re:Play",
+  "description": "Re:Play: Little Hands, Big Impact. A playful, child-friendly waste-segregation learning tool that parents and kids use together to sort common household waste, earn rewards, and watch educational videos.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
