@@ -11,7 +11,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ logoUrl, onFinish })
   useEffect(() => {
     const timer = setTimeout(() => {
       onFinish();
-    }, 1500); // Transition to home after ~1.5 seconds
+    }, 800); // Transition to home after ~0.8 seconds
     return () => clearTimeout(timer);
   }, [onFinish]);
 
@@ -31,7 +31,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ logoUrl, onFinish })
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.6, ease: "easeInOut" }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
       className="fixed inset-0 z-50 flex flex-col items-center justify-between bg-gradient-to-b from-emerald-50 via-green-100 to-emerald-200 px-6 py-12 select-none overflow-hidden"
     >
       {/* Top Welcome Tag */}

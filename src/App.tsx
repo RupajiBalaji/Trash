@@ -948,7 +948,7 @@ export default function App() {
 
   if (showSplash) {
     return (
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <SplashScreen logoUrl={logoImg} onFinish={() => {
           localStorage.setItem("replay_seen_splash", "1");
           setShowSplash(false);
